@@ -1,3 +1,4 @@
+#pragma once
 
 //链表节点
 struct ListNode

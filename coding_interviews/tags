@@ -1,0 +1,35 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddToTail	List.cpp	/^void AddToTail(ListNode** pHead, int value)$/;"	f
+BinaryTreeNode	BinaryTree.h	/^struct BinaryTreeNode$/;"	s
+Construct	ConstructBinaryTree.cpp	/^BinaryTreeNode* Construct(int* preorder, int* inorder, int length)$/;"	f
+ConstructCore	ConstructBinaryTree.cpp	/^BinaryTreeNode* ConstructCore(int* startPreorder, int* endPreorder, int* startInorder, int* endInorder)$/;"	f
+DestroyList	List.cpp	/^void DestroyList(ListNode* pHead)$/;"	f
+Find	FindInPartiallySortedMatrix.cpp	/^bool Find(int* matrix, int rows, int columns, int number)$/;"	f
+ListNode	List.h	/^struct ListNode$/;"	s
+MyReplaceBlank	ReplaceBlank.cpp	/^char* MyReplaceBlank(const char* src)$/;"	f
+PrintListReversingly_Iteratively	PrintListInReversedOrder.cpp	/^void PrintListReversingly_Iteratively(ListNode* pHead)$/;"	f
+PrintListReversingly_Recursively	PrintListInReversedOrder.cpp	/^void PrintListReversingly_Recursively(ListNode* pHead)$/;"	f
+RemoveNode	List.cpp	/^bool RemoveNode(ListNode** pHead, int value)$/;"	f
+ReplaceBlank	ReplaceBlank.cpp	/^void ReplaceBlank(char string[], int length)$/;"	f
+Test	FindInPartiallySortedMatrix.cpp	/^void Test(char* testName, int* matrix, int rows, int columns, int number, bool expected)$/;"	f
+Test1	FindInPartiallySortedMatrix.cpp	/^void Test1()$/;"	f
+Test2	FindInPartiallySortedMatrix.cpp	/^void Test2()$/;"	f
+Test3	FindInPartiallySortedMatrix.cpp	/^void Test3()$/;"	f
+Test4	FindInPartiallySortedMatrix.cpp	/^void Test4()$/;"	f
+Test5	FindInPartiallySortedMatrix.cpp	/^void Test5()$/;"	f
+Test6	FindInPartiallySortedMatrix.cpp	/^void Test6()$/;"	f
+Test7	FindInPartiallySortedMatrix.cpp	/^void Test7()$/;"	f
+getBlankNum	ReplaceBlank.cpp	/^int getBlankNum(const char* str)$/;"	f
+m_nValue	BinaryTree.h	/^	int m_nValue;$/;"	m	struct:BinaryTreeNode
+m_nValue	List.h	/^	int m_nValue;$/;"	m	struct:ListNode
+m_pLeft	BinaryTree.h	/^	BinaryTreeNode* m_pLeft;$/;"	m	struct:BinaryTreeNode
+m_pNext	List.h	/^	ListNode* m_pNext;$/;"	m	struct:ListNode
+m_pRight	BinaryTree.h	/^	BinaryTreeNode* m_pRight;$/;"	m	struct:BinaryTreeNode
+main	FindInPartiallySortedMatrix.cpp	/^int main()$/;"	f
+main	PrintListInReversedOrder.cpp	/^int main()$/;"	f
+main	ReplaceBlank.cpp	/^int main()$/;"	f
