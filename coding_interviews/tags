@@ -6,30 +6,56 @@
 !_TAG_PROGRAM_VERSION	5.8	//
 AddToTail	List.cpp	/^void AddToTail(ListNode** pHead, int value)$/;"	f
 BinaryTreeNode	BinaryTree.h	/^struct BinaryTreeNode$/;"	s
+CQueue	QueueWithTwoStacks.cpp	/^		CQueue(void) {}$/;"	f	class:CQueue
+CQueue	QueueWithTwoStacks.cpp	/^template <typename T> class CQueue$/;"	c	file:
 Construct	ConstructBinaryTree.cpp	/^BinaryTreeNode* Construct(int* preorder, int* inorder, int length)$/;"	f
 ConstructCore	ConstructBinaryTree.cpp	/^BinaryTreeNode* ConstructCore(int* startPreorder, int* endPreorder, int* startInorder, int* endInorder)$/;"	f
 DestroyList	List.cpp	/^void DestroyList(ListNode* pHead)$/;"	f
+DestroyTree	BinaryTree.cpp	/^void DestroyTree(BinaryTreeNode* pRoot)$/;"	f
 Find	FindInPartiallySortedMatrix.cpp	/^bool Find(int* matrix, int rows, int columns, int number)$/;"	f
 ListNode	List.h	/^struct ListNode$/;"	s
 MyReplaceBlank	ReplaceBlank.cpp	/^char* MyReplaceBlank(const char* src)$/;"	f
+Partition_1	Sort.cpp	/^int Partition_1(int array[], int len, int start, int end)$/;"	f
 PrintListReversingly_Iteratively	PrintListInReversedOrder.cpp	/^void PrintListReversingly_Iteratively(ListNode* pHead)$/;"	f
 PrintListReversingly_Recursively	PrintListInReversedOrder.cpp	/^void PrintListReversingly_Recursively(ListNode* pHead)$/;"	f
+PrintTree	BinaryTree.cpp	/^void PrintTree(BinaryTreeNode* pRoot)$/;"	f
+PrintTreeNode	BinaryTree.cpp	/^void PrintTreeNode(BinaryTreeNode* pNode)$/;"	f
+QuickSort_1	Sort.cpp	/^void QuickSort_1(int array[], int len, int start, int end)$/;"	f
+RandomInRange	Array.h	/^static int RandomInRange(int min, int max)$/;"	f
 RemoveNode	List.cpp	/^bool RemoveNode(ListNode** pHead, int value)$/;"	f
 ReplaceBlank	ReplaceBlank.cpp	/^void ReplaceBlank(char string[], int length)$/;"	f
+Swap	Array.h	/^static void Swap(int* num1, int* num2)$/;"	f
+Test	ConstructBinaryTree.cpp	/^void Test(char* testName, int* preorder, int* inorder, int length)$/;"	f
 Test	FindInPartiallySortedMatrix.cpp	/^void Test(char* testName, int* matrix, int rows, int columns, int number, bool expected)$/;"	f
+Test	QueueWithTwoStacks.cpp	/^void Test(char actual, char expected)$/;"	f
+Test1	ConstructBinaryTree.cpp	/^void Test1()$/;"	f
 Test1	FindInPartiallySortedMatrix.cpp	/^void Test1()$/;"	f
+Test2	ConstructBinaryTree.cpp	/^void Test2()$/;"	f
 Test2	FindInPartiallySortedMatrix.cpp	/^void Test2()$/;"	f
+Test3	ConstructBinaryTree.cpp	/^void Test3()$/;"	f
 Test3	FindInPartiallySortedMatrix.cpp	/^void Test3()$/;"	f
+Test4	ConstructBinaryTree.cpp	/^void Test4()$/;"	f
 Test4	FindInPartiallySortedMatrix.cpp	/^void Test4()$/;"	f
+Test5	ConstructBinaryTree.cpp	/^void Test5()$/;"	f
 Test5	FindInPartiallySortedMatrix.cpp	/^void Test5()$/;"	f
+Test6	ConstructBinaryTree.cpp	/^void Test6()$/;"	f
 Test6	FindInPartiallySortedMatrix.cpp	/^void Test6()$/;"	f
+Test7	ConstructBinaryTree.cpp	/^void Test7()$/;"	f
 Test7	FindInPartiallySortedMatrix.cpp	/^void Test7()$/;"	f
+appendTail	QueueWithTwoStacks.cpp	/^template<typename T> void CQueue<T>::appendTail(const T& element)$/;"	f	class:CQueue
+deleteHead	QueueWithTwoStacks.cpp	/^template<typename T> T CQueue<T>::deleteHead()$/;"	f	class:CQueue
 getBlankNum	ReplaceBlank.cpp	/^int getBlankNum(const char* str)$/;"	f
 m_nValue	BinaryTree.h	/^	int m_nValue;$/;"	m	struct:BinaryTreeNode
 m_nValue	List.h	/^	int m_nValue;$/;"	m	struct:ListNode
 m_pLeft	BinaryTree.h	/^	BinaryTreeNode* m_pLeft;$/;"	m	struct:BinaryTreeNode
 m_pNext	List.h	/^	ListNode* m_pNext;$/;"	m	struct:ListNode
 m_pRight	BinaryTree.h	/^	BinaryTreeNode* m_pRight;$/;"	m	struct:BinaryTreeNode
+main	ConstructBinaryTree.cpp	/^int main()$/;"	f
 main	FindInPartiallySortedMatrix.cpp	/^int main()$/;"	f
 main	PrintListInReversedOrder.cpp	/^int main()$/;"	f
+main	QueueWithTwoStacks.cpp	/^int main()$/;"	f
 main	ReplaceBlank.cpp	/^int main()$/;"	f
+main	Sort.cpp	/^int main()$/;"	f
+stack1	QueueWithTwoStacks.cpp	/^		stack<T> stack1;$/;"	m	class:CQueue	file:
+stack2	QueueWithTwoStacks.cpp	/^		stack<T> stack2;$/;"	m	class:CQueue	file:
+~CQueue	QueueWithTwoStacks.cpp	/^		~CQueue(void) {}$/;"	f	class:CQueue
