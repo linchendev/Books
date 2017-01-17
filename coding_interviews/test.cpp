@@ -1,11 +1,15 @@
 #include <iostream>
-
+#include <vector>
 using namespace std;
 
 int main()
 {
-	int i = 0;
-	i--;
-	++i;
-	cout << i << endl;
+	vector<int> a;
+	a.push_back(1);
+	a.push_back(2);
+	a.push_back(3);
+	swap(a[0], a[1]);
+
+	for(int i = 0; i < a.size(); ++i)
+		cout << a[i] << endl;
 }

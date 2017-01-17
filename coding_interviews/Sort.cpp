@@ -95,6 +95,92 @@ int QuickSort_2(int array[], int len, int start, int end)
 	}
 }
 
+//STL,最佳
+void QuickSort_3(int array[], int len, int start, int end)
+{
+	if(array == NULL || len <= 1 || start >= end)
+		return;
+
+	//这里还可以进行优化，取首,尾,中三个值进行比较去中间值
+	int pivotIndex = start;
+	int pivotValue = array[start];
+	int low = start;
+	int high = end+1;
+	
+	while(true)
+	{
+		while(array[low] < pivotValue) ++low;
+		--high;
+		while(pivotValue < array[high]) --high;
+		if(!(low < high))
+			break;
+		SwapInt(array, low, high);
+		++low;
+	}
+
+	pivotIndex = low;
+	array[pivotIndex] = pivotValue;
+	if(pivotIndex > start)
+		QuickSort_3(array, pivotIndex-start, start, pivotIndex-1);
+	if(pivotIndex < end)
+		QuickSort_3(array, end-pivotIndex, pivotIndex+1, end);
+}
+
+
+void InsertSort_1(int array[], int len)
+{
+	if(array == NULL || len <= 1)
+		return;
+
+	for(int i = 1; i < len; ++i)
+	{
+		int j = i-1;
+		int temp = array[i];
+		for(; j >= 0 && temp < array[j]; --j)
+		{
+			array[j+1] = array[j];
+		}
+		array[j+1] = temp;
+	}
+}
+
+void copy_backward(int array[], int start, int end)
+{
+	for(int i = end; i > start; --i)
+		array[i] = array[i-1];
+}
+
+//STL
+//节省了一个边界判断，在处理大数据时可以显著优化
+void InsertSort_2(int array[], int len)
+{
+	if(array == NULL || len <= 1)
+		return;
+
+	for(int i = 1; i < len; ++i)
+	{
+		int temp = array[i];
+		if(temp < array[0])
+		{
+			copy_backward(array, 0, i);
+			array[0] = temp;
+		}
+		else
+		{
+			int last = i;
+			int next = i;
+			--next;
+			while(temp < array[next])
+			{
+				array[last] = array[next];
+				last = next;
+				--next;
+			}
+			array[last] = temp;
+		}
+	}
+}
+
 int main()
 {
 	int a[] = {1,2,1,9,9,4,5,6,6,7,8};
