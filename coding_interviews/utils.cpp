@@ -63,7 +63,6 @@ void permgenM(vector<int>& a, int n, int M)
 //组合不够散列!比如5 4 6就不能出现,但满足互斥需求，因为并不是要求全排列
 void comb(vector<int>& a, vector<int>& b, int n, int m)
 {
-	int i;
 	if(m == 0) {
 		printResult(b);	
 	} else {
