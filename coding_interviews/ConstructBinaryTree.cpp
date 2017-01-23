@@ -6,6 +6,7 @@
 #include <exception>
 #include <iostream>
 #include <stdio.h>
+using namespace std;
 
 BinaryTreeNode* ConstructCore(int* startPreorder, int* endPreorder, int* startInorder, int* endInorder);
 
@@ -61,7 +62,7 @@ BinaryTreeNode* ConstructCore(int* startPreorder, int* endPreorder, int* startIn
 }
 
 // ====================测试代码====================
-void Test(char* testName, int* preorder, int* inorder, int length)
+void Test(const char* testName, int* preorder, int* inorder, int length)
 {
 	if(testName != NULL)
 		printf("%s begins:\n", testName);
@@ -79,7 +80,15 @@ void Test(char* testName, int* preorder, int* inorder, int length)
 	try
 	{
 		BinaryTreeNode* root = Construct(preorder, inorder, length);
-		PrintTree(root);
+		//PrintTree(root);
+		cout << "前序遍历" << endl;
+		PreOrder2(root);
+
+		cout << "中序遍历" << endl;
+		InOrder2(root);
+
+		cout << "后序遍历" << endl;
+		PostOrder2(root);
 
 		DestroyTree(root);
 	}
@@ -102,6 +111,7 @@ void Test1()
 	const int length = 8;
 	int preorder[length] = {1, 2, 4, 7, 3, 5, 6, 8};
 	int inorder[length] = {4, 7, 2, 1, 5, 3, 8, 6};
+	//7 4 2 5 8 6 3 1
 
 	Test("Test1", preorder, inorder, length);
 }
@@ -189,10 +199,10 @@ void Test7()
 int main()
 {
 	Test1();
-	Test2();
-	Test3();
-	Test4();
-	Test5();
-	Test6();
-	Test7();
+	//Test2();
+	//Test3();
+	//Test4();
+	//Test5();
+	//Test6();
+	//Test7();
 }

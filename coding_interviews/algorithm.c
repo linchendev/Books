@@ -90,6 +90,7 @@ State* lookup(char *prefix[NPREF], int create)
 /* build: read input, build prefix table */
 void build(char *prefix[NPREF], FILE *f)
 {
+	//假设单词长度9
 	char buf[10] = {0}, fmt[10];
 
 	/* create a format string; %s could overflow buf */
